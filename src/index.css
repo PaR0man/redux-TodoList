@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 16px);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0 0 -20px;
+}
+h3{
+  font-size: 30px;
+}
+
+li{
+  border: solid 2px #282c34;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: -40px;
+    font-size: 20px;
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li>div{
+  display: flex;
+  justify-content: space-between;
+}
+
+li>input{
+  width: 20px;
+}
+
+li>button {
+    border-radius: 30%;
+    padding: 3px;
+    transition: .1s;
+}
+
+li>button:hover{
+  background-color: lightgray;
+}
+
+#AddTodo {
+  margin-left: -11px;
+  width: 100%;
+  text-align: start;
+  font-size: 20px;
+  padding: 3px 10px;
+  border: solid 2px #764abc;
+  border-radius: 10px;
+  outline-style: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #282c34;
+  padding: 5px;
+  margin: auto -20px -20px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+#footer>button {
+  border: solid 2px transparent;
+  border-radius: 5px;
+  font-size: 21px;
+  padding: auto;
+  background-color: transparent;
+  color: white;
+  transition: .1s;
+}
+
+#footer>button:hover {
+  border-color: #764abc;
+  color: #61dafb;
+  background-color: transparent;
+}
+
+#root{
+  box-shadow: 0 0 10px 5px #92e7ff;
+  background-color: snow;
+  border: solid 3px #764abc;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  min-width: 500px;
+  margin: auto 40% auto;
+}
+#Redux{
+  color: #764abc;
+}
+#React{
+  color:#61dafb;
+}
+
+.completed{
+  border: solid 2px #764abc;
+  text-decoration: line-through;
+}
+
+.editableTodo{
+  width: 90%;
+  border: dashed 2px #282c34;
+  border-radius: 5px;
+  font-size: 20px;
+  outline-style:none ;
+}
+
