@@ -14,3 +14,22 @@ code {
 .headerRoot {
   text-align: center;
 }
+.addFieldRoot {
+  display: flex;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todoItem {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.todoItemTitle {
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
