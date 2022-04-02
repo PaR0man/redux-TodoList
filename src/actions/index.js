@@ -10,3 +10,17 @@ export const addTodo = (title) => ({
     isCompleted: false,
   },
 });
+
+export const removeTodo = (id) => ({
+  type: listActions.REMOVE_TODO,
+  payload: id,
+});
+
+export const toggleTodo = (id) => ({
+  type: listActions.TOGGLE_TODO,
+  payload: id,
+});
+
+export const removeCompleted = () => ({
+  type: listActions.REMOVE_COMPLETED,
+});

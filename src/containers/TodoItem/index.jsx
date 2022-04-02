@@ -1,11 +1,27 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { removeTodo, toggleTodo } from "../../actions";
 
 export const TodoItem = ({ id, title, isCompleted }) => {
+  const dispatch = useDispatch();
+
+  const handleRemoveItem = (removableId) => {
+    dispatch(removeTodo(removableId));
+  };
+
+  const handleToggleItem = (toggableId) => {
+    dispatch(toggleTodo(toggableId));
+  };
+
   return (
     <div className='todoItem'>
-      <input type='checkbox' value={isCompleted} />
+      <input
+        type='checkbox'
+        value={isCompleted}
+        onChange={() => handleToggleItem(id)}
+      />
       <h3 className='todoItemTitle'>{title}</h3>
-      <button>X</button>
+      <button onClick={() => handleRemoveItem(id)}>X</button>
     </div>
   );
 };

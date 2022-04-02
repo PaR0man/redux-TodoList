@@ -33,3 +33,7 @@ code {
   overflow: scroll;
   text-overflow: ellipsis;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+}

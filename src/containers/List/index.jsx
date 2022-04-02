@@ -10,6 +10,7 @@ export const List = () => {
       {todoList.map((todo) => (
         <TodoItem
           key={todo.id}
+          id={todo.id}
           title={todo.title}
           isCompleted={todo.isCompleted}
         />
