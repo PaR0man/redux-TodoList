@@ -1,15 +1,16 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { removeCompleted } from "../../actions";
+import { filterTypes } from "../../actions/types";
 import { Filter } from "../Filters";
 
 export const Footer = () => {
   const dispatch = useDispatch();
 
   const filterConfig = [
-    { title: "Show compleded", config: "completed" },
-    { title: "Show in progress", config: "progress" },
-    { title: "Show all", config: "all" },
+    { title: "Show compleded", config: filterTypes.COMPLETED },
+    { title: "Show in progress", config: filterTypes.IN_PROGRESS },
+    { title: "Show all", config: filterTypes.ALL },
   ];
 
   const handleRemoveCompleted = () => {

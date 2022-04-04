@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { removeTodo, toggleTodo } from "../../actions";
+import { removeTodo, toggleTodo } from "../../actions/todoActions";
 
 export const TodoItem = ({ id, title, isCompleted }) => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export const TodoItem = ({ id, title, isCompleted }) => {
     <div className='todoItem'>
       <input
         type='checkbox'
-        value={isCompleted}
+        checked={isCompleted}
         onChange={() => handleToggleItem(id)}
       />
       <h3 className='todoItemTitle'>{title}</h3>

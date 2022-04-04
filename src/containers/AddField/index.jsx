@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../../actions";
+import { addTodo, setFilter } from "../../actions";
+import { filterTypes } from "../../actions/types";
 
 export const AddField = () => {
   const [tempTodo, setTempTodo] = useState("");
@@ -8,6 +9,7 @@ export const AddField = () => {
 
   const handleAddTodo = () => {
     dispatch(addTodo(tempTodo));
+    dispatch(setFilter(filterTypes.ALL));
     setTempTodo("");
   };
 
